@@ -1,0 +1,224 @@
+{
+  "data": {
+    "id": 9101,
+    "slug": "ufc-sample-completed",
+    "title": "UFC Sample Night: Sample vs. Example",
+    "short_title": null,
+    "numbering": null,
+    "org": "ufc",
+    "sport": "mma",
+    "starts_at": "2026-11-15T01:00:00.000Z",
+    "main_card_at": "2026-11-15T03:00:00.000Z",
+    "prelims_at": "2026-11-15T01:00:00.000Z",
+    "early_prelims_at": null,
+    "tz": "America/Los_Angeles",
+    "status": "completed",
+    "is_ppv": false,
+    "is_title_card": false,
+    "venue": {
+      "id": 1,
+      "slug": "sample-arena",
+      "name": "Sample Arena",
+      "city": "Las Vegas",
+      "region": "Nevada",
+      "country": "United States",
+      "country_code": "US",
+      "tz": "America/Los_Angeles",
+      "capacity": null,
+      "lat": null,
+      "lng": null
+    },
+    "card": [
+      {
+        "id": 301,
+        "ordering": 1,
+        "card_section": "main",
+        "sport": "mma",
+        "weight_class": "Welterweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": true,
+        "scheduled_rounds": 5,
+        "status": "completed",
+        "fighter_a": {
+          "id": 201,
+          "slug": "alex-sample",
+          "name": "Alex Sample",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 202,
+          "slug": "brian-example",
+          "name": "Brian Example",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": {
+          "winner_fighter_id": 201,
+          "method": "KO/TKO",
+          "method_normalized": "ko_tko",
+          "finish_detail": null,
+          "finish_position": null,
+          "round": 3,
+          "time": "2:14",
+          "time_seconds": null,
+          "details": null
+        },
+        "referee": null,
+        "bonus": null
+      },
+      {
+        "id": 302,
+        "ordering": 2,
+        "card_section": "main",
+        "sport": "mma",
+        "weight_class": "Lightweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": false,
+        "scheduled_rounds": 3,
+        "status": "completed",
+        "fighter_a": {
+          "id": 203,
+          "slug": "carlos-placeholder",
+          "name": "Carlos Placeholder",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 204,
+          "slug": "dmitri-mockson",
+          "name": "Dmitri Mockson",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": {
+          "winner_fighter_id": 204,
+          "method": "Decision - Unanimous",
+          "method_normalized": "decision_unanimous",
+          "finish_detail": null,
+          "finish_position": null,
+          "round": 3,
+          "time": "5:00",
+          "time_seconds": null,
+          "details": null
+        },
+        "referee": null,
+        "bonus": null
+      },
+      {
+        "id": 303,
+        "ordering": 3,
+        "card_section": "prelims",
+        "sport": "mma",
+        "weight_class": "Featherweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": false,
+        "scheduled_rounds": 3,
+        "status": "completed",
+        "fighter_a": {
+          "id": 205,
+          "slug": "eli-fixture",
+          "name": "Eli Fixture",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 206,
+          "slug": "frank-testwell",
+          "name": "Frank Testwell",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": {
+          "winner_fighter_id": 205,
+          "method": "Submission (Rear-Naked Choke)",
+          "method_normalized": "submission",
+          "finish_detail": null,
+          "finish_position": null,
+          "round": 2,
+          "time": "3:40",
+          "time_seconds": null,
+          "details": null
+        },
+        "referee": null,
+        "bonus": null
+      },
+      {
+        "id": 304,
+        "ordering": 4,
+        "card_section": "early_prelims",
+        "sport": "mma",
+        "weight_class": "Flyweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": false,
+        "scheduled_rounds": 3,
+        "status": "completed",
+        "fighter_a": {
+          "id": 207,
+          "slug": "gus-sampleton",
+          "name": "Gus Sampleton",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 208,
+          "slug": "hal-demo",
+          "name": "Hal Demo",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": {
+          "winner_fighter_id": null,
+          "method": "Decision - Split",
+          "method_normalized": "draw",
+          "finish_detail": null,
+          "finish_position": null,
+          "round": 3,
+          "time": "5:00",
+          "time_seconds": null,
+          "details": null
+        },
+        "referee": null,
+        "bonus": null
+      },
+      {
+        "id": 305,
+        "ordering": 5,
+        "card_section": "early_prelims",
+        "sport": "mma",
+        "weight_class": "Bantamweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": false,
+        "scheduled_rounds": 3,
+        "status": "cancelled",
+        "fighter_a": {
+          "id": 209,
+          "slug": "ivan-specimen",
+          "name": "Ivan Specimen",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": null,
+        "result": null,
+        "referee": null,
+        "bonus": null
+      }
+    ],
+    "broadcasts": []
+  },
+  "meta": {}
+}

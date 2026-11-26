@@ -1,0 +1,67 @@
+{
+  "data": {
+    "id": 9104,
+    "slug": "ufc-sample-announced",
+    "title": "UFC Sample Night: Announced",
+    "short_title": null,
+    "numbering": null,
+    "org": "ufc",
+    "sport": "mma",
+    "starts_at": "2026-12-20T01:00:00.000Z",
+    "main_card_at": null,
+    "prelims_at": null,
+    "early_prelims_at": null,
+    "tz": "America/Los_Angeles",
+    "status": "announced",
+    "is_ppv": false,
+    "is_title_card": false,
+    "venue": {
+      "id": 1,
+      "slug": "sample-arena",
+      "name": "Sample Arena",
+      "city": "Las Vegas",
+      "region": "Nevada",
+      "country": "United States",
+      "country_code": "US",
+      "tz": "America/Los_Angeles",
+      "capacity": null,
+      "lat": null,
+      "lng": null
+    },
+    "card": [
+      {
+        "id": 321,
+        "ordering": 1,
+        "card_section": "main",
+        "sport": "mma",
+        "weight_class": "Light Heavyweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": true,
+        "scheduled_rounds": 5,
+        "status": "announced",
+        "fighter_a": {
+          "id": 205,
+          "slug": "eli-fixture",
+          "name": "Eli Fixture",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 206,
+          "slug": "frank-testwell",
+          "name": "Frank Testwell",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": null,
+        "referee": null,
+        "bonus": null
+      }
+    ],
+    "broadcasts": []
+  },
+  "meta": {}
+}

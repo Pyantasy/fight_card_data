@@ -1,0 +1,215 @@
+{
+  "data": {
+    "id": 9102,
+    "slug": "ufc-sample-ppv",
+    "title": "UFC 999: Placeholder vs. Mockson",
+    "short_title": null,
+    "numbering": "UFC 999",
+    "org": "ufc",
+    "sport": "mma",
+    "starts_at": "2026-12-06T01:00:00.000Z",
+    "main_card_at": "2026-12-06T03:00:00.000Z",
+    "prelims_at": "2026-12-06T01:00:00.000Z",
+    "early_prelims_at": null,
+    "tz": "America/Los_Angeles",
+    "status": "scheduled",
+    "is_ppv": true,
+    "is_title_card": true,
+    "venue": {
+      "id": 1,
+      "slug": "sample-arena",
+      "name": "Sample Arena",
+      "city": "Las Vegas",
+      "region": "Nevada",
+      "country": "United States",
+      "country_code": "US",
+      "tz": "America/Los_Angeles",
+      "capacity": null,
+      "lat": null,
+      "lng": null
+    },
+    "card": [
+      {
+        "id": 311,
+        "ordering": 1,
+        "card_section": "main",
+        "sport": "mma",
+        "weight_class": "Lightweight",
+        "division_slug": null,
+        "is_title": true,
+        "is_main": true,
+        "scheduled_rounds": 5,
+        "status": "confirmed",
+        "fighter_a": {
+          "id": 203,
+          "slug": "carlos-placeholder",
+          "name": "Carlos Placeholder",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 204,
+          "slug": "dmitri-mockson",
+          "name": "Dmitri Mockson",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": null,
+        "referee": null,
+        "bonus": null
+      },
+      {
+        "id": 312,
+        "ordering": 2,
+        "card_section": "main",
+        "sport": "mma",
+        "weight_class": "Welterweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": false,
+        "scheduled_rounds": 3,
+        "status": "confirmed",
+        "fighter_a": {
+          "id": 201,
+          "slug": "alex-sample",
+          "name": "Alex Sample",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 202,
+          "slug": "brian-example",
+          "name": "Brian Example",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": null,
+        "referee": null,
+        "bonus": null
+      },
+      {
+        "id": 313,
+        "ordering": 3,
+        "card_section": "prelims",
+        "sport": "mma",
+        "weight_class": "Middleweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": false,
+        "scheduled_rounds": 3,
+        "status": "confirmed",
+        "fighter_a": {
+          "id": 210,
+          "slug": "jon-exemplar",
+          "name": "Jon Exemplar",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 211,
+          "slug": "kai-prototype",
+          "name": "Kai Prototype",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": null,
+        "referee": null,
+        "bonus": null
+      },
+      {
+        "id": 314,
+        "ordering": 4,
+        "card_section": "prelims",
+        "sport": "mma",
+        "weight_class": "Heavyweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": false,
+        "scheduled_rounds": 3,
+        "status": "announced",
+        "fighter_a": {
+          "id": 212,
+          "slug": "leo-stubbs",
+          "name": "Leo Stubbs",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": null,
+        "result": null,
+        "referee": null,
+        "bonus": null
+      },
+      {
+        "id": 315,
+        "ordering": 5,
+        "card_section": "early_prelims",
+        "sport": "mma",
+        "weight_class": "Catchweight 150 lbs",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": false,
+        "scheduled_rounds": 3,
+        "status": "confirmed",
+        "fighter_a": {
+          "id": 207,
+          "slug": "gus-sampleton",
+          "name": "Gus Sampleton",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 208,
+          "slug": "hal-demo",
+          "name": "Hal Demo",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": null,
+        "referee": null,
+        "bonus": null
+      },
+      {
+        "id": 316,
+        "ordering": 6,
+        "card_section": null,
+        "sport": "mma",
+        "weight_class": "Women's Strawweight",
+        "division_slug": null,
+        "is_title": false,
+        "is_main": false,
+        "scheduled_rounds": 3,
+        "status": "confirmed",
+        "fighter_a": {
+          "id": 209,
+          "slug": "ivan-specimen",
+          "name": "Ivan Specimen",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "fighter_b": {
+          "id": 206,
+          "slug": "frank-testwell",
+          "name": "Frank Testwell",
+          "nickname": null,
+          "nationality": "United States",
+          "country_code": "US"
+        },
+        "result": null,
+        "referee": null,
+        "bonus": null
+      }
+    ],
+    "broadcasts": []
+  },
+  "meta": {}
+}

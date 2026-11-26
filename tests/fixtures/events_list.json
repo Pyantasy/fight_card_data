@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "id": 9101,
+      "slug": "ufc-sample-completed",
+      "title": "UFC Sample Night: Sample vs. Example",
+      "short_title": null,
+      "numbering": null,
+      "org": "ufc",
+      "sport": "mma",
+      "starts_at": "2026-11-15T01:00:00.000Z",
+      "main_card_at": "2026-11-15T03:00:00.000Z",
+      "prelims_at": "2026-11-15T01:00:00.000Z",
+      "early_prelims_at": null,
+      "tz": "America/Los_Angeles",
+      "status": "completed",
+      "is_ppv": false,
+      "is_title_card": false
+    },
+    {
+      "id": 9102,
+      "slug": "ufc-sample-ppv",
+      "title": "UFC 999: Placeholder vs. Mockson",
+      "short_title": null,
+      "numbering": "UFC 999",
+      "org": "ufc",
+      "sport": "mma",
+      "starts_at": "2026-12-06T01:00:00.000Z",
+      "main_card_at": "2026-12-06T03:00:00.000Z",
+      "prelims_at": "2026-12-06T01:00:00.000Z",
+      "early_prelims_at": null,
+      "tz": "America/Los_Angeles",
+      "status": "scheduled",
+      "is_ppv": true,
+      "is_title_card": true
+    },
+    {
+      "id": 9103,
+      "slug": "ufc-sample-cancelled",
+      "title": "UFC Sample Cancelled Card",
+      "short_title": null,
+      "numbering": null,
+      "org": "ufc",
+      "sport": "mma",
+      "starts_at": "2026-12-13T01:00:00.000Z",
+      "main_card_at": null,
+      "prelims_at": null,
+      "early_prelims_at": null,
+      "tz": "America/Los_Angeles",
+      "status": "cancelled",
+      "is_ppv": false,
+      "is_title_card": false
+    },
+    {
+      "id": 9104,
+      "slug": "ufc-sample-announced",
+      "title": "UFC Sample Night: Announced",
+      "short_title": null,
+      "numbering": null,
+      "org": "ufc",
+      "sport": "mma",
+      "starts_at": "2026-12-20T01:00:00.000Z",
+      "main_card_at": null,
+      "prelims_at": null,
+      "early_prelims_at": null,
+      "tz": "America/Los_Angeles",
+      "status": "announced",
+      "is_ppv": false,
+      "is_title_card": false
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "next_cursor": null,
+      "has_more": false,
+      "limit": 100
+    }
+  }
+}

@@ -1,0 +1,57 @@
+name: Weekly fight card refresh
+
+on:
+  schedule:
+    # Mondays 14:00 UTC (after Saturday-night UFC results have settled)
+    - cron: "0 14 * * 1"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "refresh = fetch and commit data/fights.json if it changed; fetch-only = fetch and parse, write nothing; dry-run = offline samples"
+        type: choice
+        default: refresh
+        options:
+          - refresh
+          - fetch-only
+          - dry-run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests
+        run: python -m unittest discover -s tests
+      - name: Refresh
+        env:
+          MODE: ${{ inputs.mode || 'refresh' }}
+          UFCALENDAR_API_KEY: ${{ secrets.UFCALENDAR_API_KEY }}
+        run: |
+          case "$MODE" in
+            dry-run)    python refresh_fights.py --dry-run ;;
+            fetch-only) python refresh_fights.py --no-write ;;
+            *)          python refresh_fights.py ;;
+          esac
+      - name: Commit data/fights.json if it changed
+        if: ${{ (inputs.mode || 'refresh') == 'refresh' }}
+        run: |
+          if git diff --quiet -- data/fights.json && [ -z "$(git ls-files --others --exclude-standard -- data/fights.json)" ]; then
+            echo "data/fights.json unchanged; nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/fights.json
+          git commit -m "Refresh data/fights.json"
+          git push

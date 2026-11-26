@@ -434,7 +434,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         now = datetime(2026, 11, 26, 12, 0, tzinfo=timezone.utc)
         client: Any = FixtureClient(budget)
     else:
-        api_key = os.environ.get("UFCALENDAR_API_KEY")
+        api_key = os.environ.get("UFCALENDAR_API_KEY", "").strip()
         if not api_key:
             log.error("UFCALENDAR_API_KEY is not set")
             return 2

@@ -221,6 +221,35 @@ class MainTests(unittest.TestCase):
             self.assertEqual(json.loads(out.read_text())["count"], 10)
 
 
+class ApiKeyWhitespaceTests(unittest.TestCase):
+    def test_key_with_trailing_whitespace_is_stripped_in_auth_header(self):
+        seen = {}
+        real_client = rf.UfcalendarClient
+
+        def fake_client(key, budget, raw):
+            seen["key"] = key
+            return real_client(key, budget, raw)
+
+        def fake_urlopen(req, timeout=None):
+            seen["auth"] = req.get_header("Authorization")
+            raise RuntimeError("stop after capturing header")
+
+        with mock.patch.dict("os.environ", {"UFCALENDAR_API_KEY": "test-key-not-real\n "}), mock.patch.object(
+            rf, "UfcalendarClient", fake_client
+        ), mock.patch("urllib.request.urlopen", fake_urlopen), mock.patch.object(rf.time, "sleep"):
+            with tempfile.TemporaryDirectory() as tmp:
+                self.assertEqual(rf.main(["--output", str(Path(tmp) / "fights.json")]), 1)
+
+        self.assertEqual(seen["key"], "test-key-not-real")
+        self.assertEqual(seen["auth"], "Bearer test-key-not-real")
+        self.assertEqual(seen["auth"], seen["auth"].strip())
+        self.assertNotIn("\n", seen["auth"])
+
+    def test_whitespace_only_key_is_treated_as_unset(self):
+        with mock.patch.dict("os.environ", {"UFCALENDAR_API_KEY": " \n"}):
+            self.assertEqual(rf.main([]), 2)
+
+
 class DryRunTests(unittest.TestCase):
     def test_dry_run_needs_no_network_or_secrets(self):
         with mock.patch.dict("os.environ", {}, clear=True), mock.patch(
